@@ -1,0 +1,8 @@
+.col-sm-9{
+    position: relative;
+  margin-top: 13px;
+  margin-bottom: 13px;
+    padding: 20px;
+    z-index: -1;
+    padding-bottom: 10%;
+}

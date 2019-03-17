@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+app-cardcompo{
+padding-bottom: 10%;
+overflow-y: scroll;
+}
+app-bodycompo{
+padding-bottom: 10%;
+overflow-y: scroll;
+}
+app-sidenavcompo{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}

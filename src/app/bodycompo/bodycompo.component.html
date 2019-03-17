@@ -1,0 +1,16 @@
+<div [hidden]="hideElement" class="col-sm-9">
+<div class="row">  
+    <div *ngFor="let item of mydata"  class="col-sm-6 col-md-4">  
+      <div  class="thumbnail">  
+        <img height="250" src="{{item.image}}" alt="...">  
+        <div class="caption">  
+          <h3>{{item.name}}</h3>  
+          <p>{{item.price | currency:'INR':true }}</p>  
+          <a routerLink="/cardcompo" class="btn btn-primary" role="button" 
+           routerLinkActive="active">Buy 
+          </a> 
+        </div>  
+      </div>  
+    </div>  
+  </div> 
+  </div>
