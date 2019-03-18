@@ -5,6 +5,7 @@ import { CardcompoComponent } from './cardcompo/cardcompo.component';
 import { DashboardcompoComponent } from './dashboardcompo/dashboardcompo.component';
 
 const routes: Routes = [
+{path: '',  component: BodycompoComponent},
 {path: 'cardcompo', component: CardcompoComponent},
 {path: 'bodycompo',  component: BodycompoComponent}];
 
