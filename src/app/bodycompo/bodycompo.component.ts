@@ -11,23 +11,16 @@ import { RouterModule, NavigationEnd } from '@angular/router';
 })
 export class BodycompoComponent implements OnInit {
   mydata = this.datafetch.getData();
-  hideElement = false;
   constructor(private datafetch: NicoserviceService, private router: Router) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        if (router.url === '/cardcompo') {
-          this.hideElement = true;
-        }  else {
-          this.hideElement = false;
-        }
-      }
+    this.mydata = this.datafetch.getData();
+    this.datafetch.changeData.subscribe(data => {
+      this.mydata = data;
     });
+   }
+  public products = [];
+  navigate() {
+    this.router.navigate(['cardcompo']);
   }
-
-
-  // navigate() {
-  //   this.router.navigate(['cardcompo']);
-  // }
   ngOnInit() {
 
   }

@@ -1,4 +1,10 @@
-<div><a routerLink="/bodycompo"   routerLinkActive="active">Go Back</a>
-<h1>new  compo</h1>
-<h2></h2>
+<h1>Product Detail</h1>
+<div class="thumbnail">
+  <img height="250" src="{{product.image}}" alt="...">
+  <div class="caption">
+    <h3>{{product.name}}</h3>
+    <p>{{product.price}}</p>
+    <input class="btn btn-success" type="button" ng-click="addItemToCart(product)" value="Add To Cart" />
+  </div>
 </div>
+<div><a routerLink="/bodycompo" routerLinkActive="active">Go Back</a>

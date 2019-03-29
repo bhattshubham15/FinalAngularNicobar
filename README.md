@@ -1,1 +1,1 @@
-# FinalAngularNicobar
+this is the shopping application using angular

@@ -1,18 +1,9 @@
-  <div id="divid">
-    <h2>Men's Zone</h2>
-     <div class="dropdown1">
-      <a href="dropbtn1" routerLink="/">Mens Special</a>
-      <div class="dropdown1-content1">
-      <a href="#">Jeans</a>
-      <a href="#">Shirt</a>
-      </div>
-      </div><br>
-      <h2>Women's Zone</h2>
-      <div class="dropdown1">
-      <a href="dropbtn1">Womens Wear</a>
-      <div class="dropdown1-content1">
-      <a href="#">Saree</a>
-      <a href="#">Tops</a>
-      </div>
-      </div>        
+<h3 style="text-align: center">Menswear Collection</h3><br>
+<div class="dropdown">
+   <button (click)="myFunction1()" class="dropbtn">+ Categories</button>
+   <div id="myDropdown1" class="dropdown-content">
+   <ul>
+     <li><button class="categ" (click) = "filter('category','Shirt')">Shirt</button></li>
+    <li><button class="categ"(click) = "filter('category','Jeans')">Jeans</button></li>
+    </ul>
 </div>

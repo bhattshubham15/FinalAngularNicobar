@@ -8,9 +8,14 @@ import { NicoserviceService } from '../nicoservice.service';
   styleUrls: ['./cardcompo.component.css']
 })
 export class CardcompoComponent implements OnInit {
-  constructor(private datafetch: NicoserviceService, private router: Router) { }
-
-  ngOnInit() {
+  product: any = null;
+  constructor(private datafetch: NicoserviceService, private router: Router) { 
+    const url = window.location ;
+    const word = url.toString().split('/');
+    const id =  word[word.length - 1];
+    this.product = datafetch.getProductDetailById(id);
   }
+  ngOnInit() {
 
+  }
 }

@@ -5,7 +5,8 @@ import { CardcompoComponent } from './cardcompo/cardcompo.component';
 import { DashboardcompoComponent } from './dashboardcompo/dashboardcompo.component';
 
 const routes: Routes = [
-{path: 'cardcompo', component: CardcompoComponent},
+{path: '',  component: BodycompoComponent},
+{path: 'cardcompo/:id', component: CardcompoComponent},
 {path: 'bodycompo',  component: BodycompoComponent}];
 
 @NgModule({
