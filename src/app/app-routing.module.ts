@@ -6,7 +6,11 @@ import { DashboardcompoComponent } from './dashboardcompo/dashboardcompo.compone
 
 const routes: Routes = [
 {path: '',  component: BodycompoComponent},
+<<<<<<< HEAD
 {path: 'cardcompo/:id', component: CardcompoComponent},
+=======
+{path: 'cardcompo', component: CardcompoComponent},
+>>>>>>> 44d7328a8dbbab2c8f90becdfd11e11df97ec21c
 {path: 'bodycompo',  component: BodycompoComponent}];
 
 @NgModule({
